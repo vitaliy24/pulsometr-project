@@ -1,0 +1,34 @@
+/* @media (max-width: 767px) {
+    .header {
+        &__logo {
+            width: 180px;
+        }
+    }
+} */
+@media (max-width: 767px) {
+    .header {
+        display: none;
+    }
+    .header_hide {
+        display: flex;
+        .header__contacts {
+            margin-top: 20px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        &__official {
+            margin-top: 20px;
+        }
+        &__contacts {
+            margin-top: 20px;
+        }
+    }
+    .header_hide {
+        display: none;
+    }
+}
+

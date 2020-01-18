@@ -1,0 +1,27 @@
+@media (max-width: 767px) {
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .promo {
+        &__icons {
+            width: 100%;
+        }
+        &__icon {
+            font-size: 12px;
+        }
+        &__header {
+            text-align: center;
+            font-size: 38px;
+        }
+        &__subheader {
+            text-align: center;
+        }
+        &__wrapper {
+            margin-top: 45px;
+        }
+    }
+}
