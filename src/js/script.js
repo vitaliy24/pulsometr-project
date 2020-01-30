@@ -50,4 +50,32 @@ $(document).ready(function(){
     });
   });
 
+  
+
+  function valideForms(form){
+    $(form).validate({
+      rules: {
+        name: "required",
+        phone: "required",
+        email: {
+          required: true,
+          email: true
+        }
+      },
+      messages: {
+        name: "Пожалуйста, введите своё имя",
+        phone: "Пожалуйста, введите свой номер телефона",
+        email: {
+          required: "Пожалуйста, введите свою почту",
+          email: "Неправильно введён адрес почты"
+        }
+      }
+    });
+  };
+
+  valideForms('#consultation-form form');
+  valideForms('#consultation form');
+  valideForms('#order form');
+
+  $('input[name=phone]').mask("+7 (999) 999-9999");
 });
