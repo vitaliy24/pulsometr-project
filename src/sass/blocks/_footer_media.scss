@@ -1,0 +1,9 @@
+@media (max-width: 575px) {
+    .footer {
+        &__info {
+            width: 320px;
+            height: 220px;
+            padding: 20px 0 0 0;
+        }
+    }
+}
